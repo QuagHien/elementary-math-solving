@@ -1,5 +1,6 @@
 # Math Solving
-A language model capable of answering math questions in alignment with the Vietnamese Education Program.
+A language model capable of answering math questions in alignment with the Vietnamese Education Program.  
+This model currently attains an accuracy score of 0.639, reflecting a moderate performance level. However, the model still has a lot of potential for improvement.
 ## Quick Start
 Clone this project and install the required packages:
 ```
@@ -21,5 +22,3 @@ python3 math-solving/dataloader.py
 ```
 python3 math-solving/train.py
 ```
-## Model evaluation
-This model currently attains an accuracy score of 0.639, reflecting a moderate performance level. However, the model still has a lot of potential for improvement.
