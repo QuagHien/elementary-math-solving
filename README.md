@@ -3,7 +3,7 @@ A language model capable of answering math questions in alignment with the Vietn
 ## Quick Start
 Clone this project and install the required packages:
 ```
-git clone https://github.com/QuagHien/advertisingbanner-generation.git
+git clone https://github.com/QuagHien/math-solving.git
 pip install -r math-solving/requirements.txt
 ```
 ## Data preprocessing
@@ -22,4 +22,4 @@ python3 math-solving/dataloader.py
 python3 math-solving/train.py
 ```
 ## Model evaluation
-This model currently attains an accuracy score of 0.635, reflecting a moderate performance level. However, there exists considerable untapped potential for enhancement and refinement in various aspects.
+This model currently attains an accuracy score of 0.639, reflecting a moderate performance level. However, the model still has a lot of potential for improvement.
