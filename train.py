@@ -1,6 +1,10 @@
 import json
 import torch
+import pandas as pd
+import numpy as np
 from datasets import Dataset
+import zipfile
+import os
 from transformers import AutoModelForMultipleChoice, TrainingArguments, Trainer
 from peft import LoraConfig, get_peft_model, TaskType
 from dataloader import VER, NUM_TRAIN_SAMPLES, USE_PEFT, FREEZE_LAYERS, FREEZE_EMBEDDINGS, MAX_INPUT, MODEL, preprocess, DataCollatorForMultipleChoice, df_train, df_valid, tokenizer, dataset_valid, dataset, tokenized_dataset_valid, tokenized_dataset
@@ -188,3 +192,15 @@ df_test
 submission = df_test[['id', 'answer']]
 submission
 submission.to_csv('output/submission_2.csv', index=False)
+
+######
+# Đường dẫn của tệp CSV
+csv_file_path = 'output/submission_2.csv'
+
+# Tạo tên cho tệp zip
+zip_file_path = 'output/submission_2.zip'
+
+# Tạo và mở tệp zip để ghi
+with zipfile.ZipFile(zip_file_path, 'w') as zip_file:
+    # Thêm tệp CSV vào zip
+    zip_file.write(csv_file_path, os.path.basename(csv_file_path))
