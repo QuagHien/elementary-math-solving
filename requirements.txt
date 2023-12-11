@@ -1,5 +1,4 @@
 pandas
-json
 torch
 typing
 numpy
@@ -9,3 +8,4 @@ transformers
 datasets
 accelerate
 sentencepiece
+peft
