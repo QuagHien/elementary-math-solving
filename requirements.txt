@@ -1,14 +1,11 @@
 pandas
-os
 json
 torch
 typing
 numpy
 deep_translator
-sklearn
+scikit-learn
 transformers
 datasets
 accelerate
 sentencepiece
-transformers
-deep_translator
