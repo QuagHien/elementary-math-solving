@@ -191,14 +191,14 @@ df_test['answer'] = df_test.apply(map_prediction_to_answer, axis=1)
 df_test
 submission = df_test[['id', 'answer']]
 submission
-submission.to_csv('output/submission_2.csv', index=False)
+submission.to_csv('submission_2.csv', index=False)
 
 ######
 # Đường dẫn của tệp CSV
-csv_file_path = 'output/submission_2.csv'
+csv_file_path = 'submission_2.csv'
 
 # Tạo tên cho tệp zip
-zip_file_path = 'output/submission_2.zip'
+zip_file_path = 'submission_2.zip'
 
 # Tạo và mở tệp zip để ghi
 with zipfile.ZipFile(zip_file_path, 'w') as zip_file:
