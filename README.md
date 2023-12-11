@@ -7,6 +7,12 @@ Clone this project and install the required packages:
 git clone https://github.com/QuagHien/math-solving.git
 pip install -r math-solving/requirements.txt
 ```
+## Data
+Organize dataset folder as example data:
+```
+gdown --id 1oTtVqsHoUQL9Q_1OdlidwcTr4tX59YvX
+gdown --id 1Pc3TMNJK5Vs_gvoF2aWcIhYG3l0bcEUB
+```
 ## Data preprocessing
 Organize dataset folder as follows:
 ```
