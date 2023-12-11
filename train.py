@@ -3,7 +3,6 @@ import torch
 import pandas as pd
 import numpy as np
 from datasets import Dataset
-import zipfile
 import os
 from transformers import AutoModelForMultipleChoice, TrainingArguments, Trainer
 from peft import LoraConfig, get_peft_model, TaskType
@@ -191,16 +190,4 @@ df_test['answer'] = df_test.apply(map_prediction_to_answer, axis=1)
 df_test
 submission = df_test[['id', 'answer']]
 submission
-submission.to_csv('submission_2.csv', index=False)
-
-######
-# Đường dẫn của tệp CSV
-csv_file_path = 'submission_2.csv'
-
-# Tạo tên cho tệp zip
-zip_file_path = 'submission_2.zip'
-
-# Tạo và mở tệp zip để ghi
-with zipfile.ZipFile(zip_file_path, 'w') as zip_file:
-    # Thêm tệp CSV vào zip
-    zip_file.write(csv_file_path, os.path.basename(csv_file_path))
+submission.to_csv('output_text.csv', index=False)
