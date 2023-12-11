@@ -3,7 +3,7 @@ from dataloader import VER, NUM_TRAIN_SAMPLES, USE_PEFT, FREEZE_LAYERS, FREEZE_E
 
 
 ######
-model = AutoModelForMultipleChoice.from_pretrained('microsoft/deberta-v3-large')
+model = AutoModelForMultipleChoice.from_pretrained('MODEL')
 
 ######
 if USE_PEFT:
