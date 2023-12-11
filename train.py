@@ -3,6 +3,8 @@ import torch
 from datasets import Dataset
 from transformers import AutoModelForMultipleChoice, TrainingArguments, Trainer
 from peft import LoraConfig, get_peft_model, TaskType
+from dataloader import VER, NUM_TRAIN_SAMPLES, USE_PEFT, FREEZE_LAYERS, FREEZE_EMBEDDINGS, MAX_INPUT, MODEL, preprocess, DataCollatorForMultipleChoice, df_train, df_valid, tokenizer, dataset_valid, dataset, tokenized_dataset_valid, tokenized_dataset
+
 
 ######
 model = AutoModelForMultipleChoice.from_pretrained('MODEL')
