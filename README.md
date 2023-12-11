@@ -17,8 +17,9 @@ Translation data to English:
 ```
 python3 math-solving/dataloader.py
 ```
-## Model: microsoft/deberta-v3-large
 ## Train and predict
+Model: microsoft/deberta-v3-large
 ```
 python3 math-solving/train.py
 ```
+
