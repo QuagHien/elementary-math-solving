@@ -1,4 +1,6 @@
 from transformers import AutoModelForMultipleChoice, TrainingArguments, Trainer
+from dataloader import VER, NUM_TRAIN_SAMPLES, USE_PEFT, FREEZE_LAYERS, FREEZE_EMBEDDINGS, MAX_INPUT, MODEL, preprocess, DataCollatorForMultipleChoice, df_train, df_valid, tokenizer, dataset_valid, dataset, tokenized_dataset_valid, tokenized_dataset
+
 
 ######
 model = AutoModelForMultipleChoice.from_pretrained('microsoft/deberta-v3-large')
