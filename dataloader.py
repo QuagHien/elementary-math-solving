@@ -30,7 +30,7 @@ FREEZE_EMBEDDINGS = True
 # LENGTH OF CONTEXT PLUS QUESTION ANSWER
 MAX_INPUT = 256
 # HUGGING FACE MODEL
-MODEL = 'microsoft/deberta-v3-large' # 'deepset/deberta-v3-large-squad2' 'OpenAssistant/reward-model-deberta-v3-large-v2' # 'microsoft/deberta-v3-large'
+MODEL = 'OpenAssistant/reward-model-deberta-v3-large-v2' # 'deepset/deberta-v3-large-squad2' 'OpenAssistant/reward-model-deberta-v3-large-v2' # 'microsoft/deberta-v3-large'
 
 
 
