@@ -1,6 +1,6 @@
 # Math Solving
 A language model capable of answering math questions in alignment with the Vietnamese Education Program.  
-This model currently attains an accuracy score of **0.647**, reflecting a moderate performance level. However, the model still has a lot of potential for improvement.
+This model currently attains an accuracy score of **0.679**, reflecting a moderate performance level. However, the model still has a lot of potential for improvement.
 ## Quick Start
 Clone this project and install the required packages:
 ```
@@ -24,7 +24,7 @@ Translation data to English:
 python3 math-solving/dataloader.py
 ```
 ## Train and predict
-Model: microsoft/deberta-v3-large
+Model: OpenAssistant/reward-model-deberta-v3-large-v2
 ```
 python3 math-solving/train.py
 ```
