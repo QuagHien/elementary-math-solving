@@ -24,7 +24,7 @@ Translation data to English:
 python3 math-solving/dataloader.py
 ```
 ## Train and predict
-Model: OpenAssistant/reward-model-deberta-v3-large-v2
+**Model: OpenAssistant/reward-model-deberta-v3-large-v2**
 ```
 python3 math-solving/train.py
 ```
