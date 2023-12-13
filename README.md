@@ -1,4 +1,4 @@
-# Math Solving - Zalo AI Challenge 2023
+# Math Solving
 A language model capable of answering math questions in alignment with the Vietnamese Education Program.  
 This model currently attains an accuracy score of **0.6738**, reflecting a moderate performance level. However, the model still has a lot of potential for improvement.
 ## Quick Start
