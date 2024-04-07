@@ -1,4 +1,4 @@
-# Math Solving with Text Classification
+# Elementary Math Solving with Text Classification
 The language model is capable of answering Vietnamese elementary math questions with Text Classification.  
 ## Quick Start
 Clone this project and install the required packages:
