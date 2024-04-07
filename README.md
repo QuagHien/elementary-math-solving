@@ -1,6 +1,5 @@
 # Math Solving with Text Classification
 The language model is capable of answering Vietnamese elementary math questions with Text Classification.  
-This model currently attains an accuracy score of **0.67**, reflecting a moderate performance level. However, the model still has a lot of potential for improvement.
 ## Quick Start
 Clone this project and install the required packages:
 ```
